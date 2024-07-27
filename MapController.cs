@@ -203,7 +203,7 @@ namespace klassenTest
             var activePolls = new List<Poll>();
             foreach (var pol in polls.Values)
             {
-                if (poll.Timeout > DateTime.Now && poll.IsEntitled)
+                if (pol.Timeout > DateTime.Now && pol.IsEntitled)
                 {
                     activePolls.Add(pol);
                 }
