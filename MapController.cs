@@ -33,7 +33,6 @@ namespace klassenTest
         public void ProcessMapEntries(List<MapEntry> entries)
         {
             foreach (var entry in entries)
-
             {
                 switch (entry.Key1)
                 {
@@ -56,14 +55,13 @@ namespace klassenTest
                     case 9:
                         HandleParameterEntry(entry); break;
                     case 10:
-                        HandleParameter20rTimeoutEntry(entry); break;
+                        HandleParameter2OrTimeoutEntry(entry); break;
                     case 11:
                         HandleAgreedersEntry(entry); break;
                     case 12:
                         HandleRejectersEntry(entry); break;
                     default:
                         HandleVoteEntry(entry); break;
-
                 }
             }
         }
@@ -76,11 +74,11 @@ namespace klassenTest
             }
             else if (entry.Key2 == 1)
             {
-                var ProviderID = (int)(entry.Value >> 32);
+                var providerID = (int)(entry.Value >> 32);
                 var amountNQT = entry.Value & 0xFFFFFFFF;
-                if (!polls.ContainsKey(ProviderID.ToString()))
+                if (!polls.ContainsKey(providerID.ToString()))
                 {
-                    polls[ProviderID.ToString()] = new Poll { ProviderID = providerID, AmountNQT = amountNQT };
+                    polls[providerID.ToString()] = new Poll { ProviderID = providerID, AmountNQT = amountNQT };
                 }
             }
         }
@@ -107,10 +105,10 @@ namespace klassenTest
                 if (!polls.ContainsKey(hashValue))
                 {
                     polls[hashValue] = new Poll { HashValue = hashValue };
-
                 }
             }
         }
+
         private void HandleProviderIDEntry(MapEntry entry)
         {
             var hashValue = entry.Key2.ToString("X");
@@ -119,6 +117,7 @@ namespace klassenTest
                 polls[hashValue].ProviderID = (int)entry.Value;
             }
         }
+
         private void HandleActorIDEntry(MapEntry entry)
         {
             var hashValue = entry.Key2.ToString("X");
@@ -127,6 +126,7 @@ namespace klassenTest
                 polls[hashValue].ActorID = entry.Value;
             }
         }
+
         private void HandleTargetIDEntry(MapEntry entry)
         {
             var hashValue = entry.Key2.ToString("X");
@@ -135,6 +135,7 @@ namespace klassenTest
                 polls[hashValue].TargetID = entry.Value;
             }
         }
+
         private void HandleMainMethodEntry(MapEntry entry)
         {
             var hashValue = entry.Key2.ToString("X");
@@ -143,6 +144,7 @@ namespace klassenTest
                 polls[hashValue].MainMethod = entry.Value.ToString();
             }
         }
+
         private void HandleSubMethodEntry(MapEntry entry)
         {
             var hashValue = entry.Key2.ToString("X");
@@ -151,6 +153,7 @@ namespace klassenTest
                 polls[hashValue].SubMethod = entry.Value.ToString();
             }
         }
+
         private void HandleParameterEntry(MapEntry entry)
         {
             var hashValue = entry.Key2.ToString("X");
@@ -159,7 +162,8 @@ namespace klassenTest
                 polls[hashValue].Parameter = entry.Value;
             }
         }
-        private void HandleParameter20rTimeoutEntry(MapEntry entry)
+
+        private void HandleParameter2OrTimeoutEntry(MapEntry entry)
         {
             var hashValue = entry.Key2.ToString("X");
             if (polls.ContainsKey(hashValue))
@@ -174,6 +178,7 @@ namespace klassenTest
                 }
             }
         }
+
         private void HandleAgreedersEntry(MapEntry entry)
         {
             var hashValue = entry.Key2.ToString("X");
@@ -182,6 +187,7 @@ namespace klassenTest
                 polls[hashValue].AgreedersCount = (int)entry.Value;
             }
         }
+
         private void HandleRejectersEntry(MapEntry entry)
         {
             var hashValue = entry.Key2.ToString("X");
@@ -190,6 +196,7 @@ namespace klassenTest
                 polls[hashValue].RejectersCount = (int)entry.Value;
             }
         }
+
         private void HandleVoteEntry(MapEntry entry)
         {
             var hashValue = entry.Key2.ToString("X");
@@ -198,6 +205,7 @@ namespace klassenTest
                 polls[hashValue].Votes.Add(entry.Value != 0);
             }
         }
+
         public List<Poll> GetActivePolls()
         {
             var activePolls = new List<Poll>();
@@ -211,3 +219,4 @@ namespace klassenTest
             return activePolls;
         }
     }
+}
