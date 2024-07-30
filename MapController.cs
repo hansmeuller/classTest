@@ -224,5 +224,6 @@ namespace klassenTest
             return new List<Poll>(polls.Values);
         }
 
+
     }
 }
