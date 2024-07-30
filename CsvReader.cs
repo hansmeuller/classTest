@@ -17,16 +17,27 @@ namespace klassenTest
 
             foreach (var line in lines)
             {
-                var parts = line.Split('\t');
+                var parts = line.Split(';');
                 if (parts.Length == 3)
                 {
-                    var entry = new MapEntry
+                    try
                     {
-                        Key1 = int.Parse(parts[0], CultureInfo.InvariantCulture),
-                        Key2 = int.Parse(parts[1], CultureInfo.InvariantCulture),
-                        Value = long.Parse(parts[2], CultureInfo.InvariantCulture)
-                    };
-                    entries.Add(entry);
+                        var entry = new MapEntry
+                        {
+                            Key1 = int.Parse(parts[0], CultureInfo.InvariantCulture),
+                            Key2 = int.Parse(parts[1], CultureInfo.InvariantCulture),
+                            Value = long.Parse(parts[2], CultureInfo.InvariantCulture)
+                        };
+                        entries.Add(entry);
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine($"fail beim verarbeiten: {line}. fail: {ex.Message}");
+                    }
+                }
+                else
+                {
+                    Console.WriteLine($"nope: {line}");
                 }
             }
             return entries;
