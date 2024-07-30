@@ -223,5 +223,12 @@ namespace klassenTest
         {
             return new List<Poll>(polls.Values);
         }
+
+        public class MapEntry
+        {
+            public long Key1 { get; set; }
+            public long Key2 { get; set; }
+            public long Value { get; set; }
+        }
     }
 }

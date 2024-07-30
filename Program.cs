@@ -16,6 +16,7 @@ namespace klassenTest
             if (!File.Exists(filePath))
             {
                 Console.WriteLine("keine csv da");
+                return;
             }
 
 
@@ -26,6 +27,7 @@ namespace klassenTest
             if (entries.Count == 0)
             {
                 Console.WriteLine("kein inhalt in der csv");
+                return;
             }
 
             //show
@@ -42,10 +44,10 @@ namespace klassenTest
 
             // polls diesdas
             var activePolls = mapController.GetActivePolls();
-            Console.WriteLine("Active Polls:");
+            Console.WriteLine("aktive polls:");
             if (activePolls.Count == 0)
             {
-                Console.WriteLine("Keine aktiven Polls gefunden.");
+                Console.WriteLine("Keine aktiven polls gefunden.");
             }
             else
             {
