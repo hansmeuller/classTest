@@ -8,8 +8,8 @@ namespace klassenTest
 {
     public class MapEntry
     {
-        public int Key1 { get; set;}
-        public int Key2 { get; set;}
+        public long Key1 { get; set;}
+        public long Key2 { get; set;}
         public long Value { get; set;}
     }
 }

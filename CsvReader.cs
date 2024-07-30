@@ -22,12 +22,18 @@ namespace klassenTest
                 {
                     try
                     {
+
+                        var key1 = long.Parse(parts[0], CultureInfo.InvariantCulture);
+                        var key2 = long.Parse(parts[1], CultureInfo.InvariantCulture);
+                        var value = long.Parse(parts[2], CultureInfo.InvariantCulture);
+
                         var entry = new MapEntry
                         {
-                            Key1 = int.Parse(parts[0], CultureInfo.InvariantCulture),
-                            Key2 = int.Parse(parts[1], CultureInfo.InvariantCulture),
-                            Value = long.Parse(parts[2], CultureInfo.InvariantCulture)
+                            Key1 = key1,
+                            Key2 = key2,
+                            Value = value
                         };
+
                         entries.Add(entry);
                     }
                     catch (Exception ex)
