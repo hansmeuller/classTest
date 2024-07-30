@@ -218,5 +218,10 @@ namespace klassenTest
             }
             return activePolls;
         }
+
+        public List<Poll> GetAllPolls()
+        {
+            return new List<Poll>(polls.Values);
+        }
     }
 }
