@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Current_Development\\hansmeuller\\classTest\\klassenTest\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AD7756DA-EF62-4E9B-8A8F-AD5106F0F708}|klassenTest\\klassenTest.csproj|c:\\current_development\\hansmeuller\\classtest\\klassentest\\klassentest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD7756DA-EF62-4E9B-8A8F-AD5106F0F708}|klassenTest\\klassenTest.csproj|solutionrelative:klassentest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AD7756DA-EF62-4E9B-8A8F-AD5106F0F708}|klassenTest\\klassenTest.csproj|c:\\current_development\\hansmeuller\\classtest\\klassentest\\klassentest\\mapcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AD7756DA-EF62-4E9B-8A8F-AD5106F0F708}|klassenTest\\klassenTest.csproj|solutionrelative:klassentest\\mapcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD7756DA-EF62-4E9B-8A8F-AD5106F0F708}|klassenTest\\klassenTest.csproj|c:\\current_development\\hansmeuller\\classtest\\klassentest\\klassentest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD7756DA-EF62-4E9B-8A8F-AD5106F0F708}|klassenTest\\klassenTest.csproj|solutionrelative:klassentest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AD7756DA-EF62-4E9B-8A8F-AD5106F0F708}|klassenTest\\klassenTest.csproj|c:\\current_development\\hansmeuller\\classtest\\klassentest\\klassentest\\mapentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -56,34 +56,23 @@
               "RelativeDocumentMoniker": "klassenTest\\CsvReader.cs",
               "ToolTip": "C:\\Current_Development\\hansmeuller\\classTest\\klassenTest\\klassenTest\\CsvReader.cs",
               "RelativeToolTip": "klassenTest\\CsvReader.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAABEAAAAnAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T19:40:09.015Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Current_Development\\hansmeuller\\classTest\\klassenTest\\klassenTest\\Program.cs",
-              "RelativeDocumentMoniker": "klassenTest\\Program.cs",
-              "ToolTip": "C:\\Current_Development\\hansmeuller\\classTest\\klassenTest\\klassenTest\\Program.cs",
-              "RelativeToolTip": "klassenTest\\Program.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAAB8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T19:25:18.894Z",
+              "WhenOpened": "2024-07-29T19:40:09.015Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "MapController.cs",
               "DocumentMoniker": "C:\\Current_Development\\hansmeuller\\classTest\\klassenTest\\klassenTest\\MapController.cs",
               "RelativeDocumentMoniker": "klassenTest\\MapController.cs",
               "ToolTip": "C:\\Current_Development\\hansmeuller\\classTest\\klassenTest\\klassenTest\\MapController.cs",
               "RelativeToolTip": "klassenTest\\MapController.cs",
-              "ViewState": "AQIAAMUAAAAAAAAAAAAYwMwAAAA9AAAA",
+              "ViewState": "AQIAABQAAAAAAAAAAAAYwCgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T08:59:06.293Z"
+              "WhenOpened": "2024-07-26T08:59:06.293Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -95,7 +84,21 @@
               "RelativeToolTip": "klassenTest\\MapEntry.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-25T12:00:30.146Z"
+              "WhenOpened": "2024-07-25T12:00:30.146Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Current_Development\\hansmeuller\\classTest\\klassenTest\\klassenTest\\Program.cs",
+              "RelativeDocumentMoniker": "klassenTest\\Program.cs",
+              "ToolTip": "C:\\Current_Development\\hansmeuller\\classTest\\klassenTest\\klassenTest\\Program.cs",
+              "RelativeToolTip": "klassenTest\\Program.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAACwAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T19:25:18.894Z",
+              "EditorCaption": ""
             }
           ]
         }
