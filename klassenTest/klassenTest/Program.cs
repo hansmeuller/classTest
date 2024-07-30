@@ -10,7 +10,7 @@ namespace klassenTest
         static void Main(string[] args)
         {
             // pfad
-            string filePath = "C:/unittest.csv";
+            string filePath = "unittest.csv";
 
             //where's jonny
             if (!File.Exists(filePath))
@@ -21,7 +21,7 @@ namespace klassenTest
 
 
             // einlesen
-            var entries = CsvReader.ReadCsv(filePath);
+            List<MapEntry> entries = CsvReader.ReadCsv(filePath);
 
             //test reading
             if (entries.Count == 0)
@@ -35,15 +35,14 @@ namespace klassenTest
             foreach (var entry in entries)
             {
                 Console.WriteLine($"Key1: {entry.Key1}, Key2: {entry.Key2}, Value: {entry.Value}");
-            
             }
 
             // verarbeiten
-            var mapController = new MapController();
+            MapController mapController = new MapController();
             mapController.ProcessMapEntries(entries);
 
             // polls diesdas
-            var activePolls = mapController.GetActivePolls();
+            List<Poll> activePolls = mapController.GetActivePolls();
             Console.WriteLine("aktive polls:");
             if (activePolls.Count == 0)
             {
@@ -57,7 +56,7 @@ namespace klassenTest
                 }
             }
             //alle polls anzeigen
-            var allPolls = mapController.GetAllPolls();
+            List<Poll> allPolls = mapController.GetAllPolls();
             Console.WriteLine("alle polls: ");
             if (allPolls.Count == 0)
             {
